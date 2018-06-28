@@ -1,0 +1,24 @@
+<div class="col-10">
+  <div class="bio">
+    <h1>Hello!</h1>
+    <p>My name is Alex Joiner and, I am a web developer.<br/> I currently making one website everyday for the next hundred days!
+    </p>
+  </div>
+  <p class ="topline"></p>
+  <h2>My Websites!</h2>
+  <div class="booyah-box col-10 offset-1">
+    <% @sites.each do |site|%>
+      <%= site.day %>
+      <%= link_to site.address, "http://#{site.address}" %>
+      <br />
+      <p class ="topline">
+        <%= site.description %>
+      </p>
+    <% end %> 
+  </div>
+  <p class ="topline"></p>
+  <div>
+    <h2>My skills!</h2>
+    <%= image_tag 'skills.png' %>
+  </div>
+</div>
