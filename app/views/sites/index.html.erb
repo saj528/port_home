@@ -2,7 +2,7 @@
 <div class="middle">
   <div class="bio">
     <h1>Hello!</h1>
-    <p>My name is Alex Joiner and I am a web developer.<br/> I'm currently making one website everyday for the next hundred days!
+    <p class="middle">  My name is Alex Joiner and I am a web developer.<br/> I'm currently making one website everyday for the next hundred days!
     </p>
   </div>
   <p class ="toplinelong"></p>
@@ -17,7 +17,29 @@
           <%= site.description %>
         </p>
       </div>
-    <% end %> 
+    <% end %>
+  </div>
+  <div>
+    <h2 class="middle">Other Projects!</h2>
+    <div class="lists offset-2">
+      <ul class="right">
+        <li><%= link_to "Pic-able", "https://grammable-alex-joiner.herokuapp.com/" %>
+          <p>This is an instagram clone!</p>
+        </li>
+        <li><%= link_to "Teachster", "https://flixter-alex-joiner.herokuapp.com/" %>
+          <p>This website is a paid video streaming site!</p>
+        </li>
+     </ul>
+
+     <ul class="left">
+        <li><%= link_to "Reviewster", "https://nomster-alex-joiner.herokuapp.com/" %>
+          <p>This site is a Yelp clone!</p>
+        </li>
+        <li><%= link_to "Historical Quoter", "https://splurty-alex-joiner.herokuapp.com/" %>
+          <p>This site allows users to upload historical quotes!</p>
+        </li>
+     </ul>
+   </div>
   </div>
   <clear/>
   <p class ="toplinelong"></p>
