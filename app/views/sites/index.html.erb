@@ -11,7 +11,7 @@
     <% @sites.each do |site|%>
       <div class="booyah-box">
         <%= site.day %>
-        <%= link_to site.address, "http://#{site.address}" %>
+        <%= link_to site.name, "http://#{site.address}" %>
         <br />
         <p class ="topline">
           <%= site.description %>

@@ -16,6 +16,7 @@ ActiveRecord::Schema.define(version: 20180628163727) do
   enable_extension "plpgsql"
 
   create_table "sites", force: :cascade do |t|
+    t.string   "name"
     t.string   "address"
     t.string   "day"
     t.string   "description"
